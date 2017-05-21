@@ -13,8 +13,11 @@ if (module['hot']) {
         modulePromise.then(appModule => appModule.destroy());
     });
 }*/
+
 if (process.env.ENV === 'production') {
   enableProdMode();
 }
 
-const modulePromise=platformBrowserDynamic().bootstrapModule(AppModule);
+// const modulePromise=platformBrowserDynamic().bootstrapModule(AppModule);
+platformBrowserDynamic().bootstrapModule(AppModule);
+
