@@ -1,4 +1,17 @@
 # AngularWebpackStarter
+
+Assuming following is already installed on your system
+1. node js
+2. Visual Studio 2015 Update 3
+
+Set npm Corporate proxy configuration, proxy server details will be available in .pac file
+```
+npm config set proxy http://"INT%5CYOUR_ID":"YOUR_PASS"@proxyserver:port
+
+npm config set https-proxy http://"INT%5CYOUR_ID":"YOUR_PASS"@proxyserver:port
+npm config set registry=http://registry.npmjs.org/
+npm config set strict-ssl=false
+```
 install node module dependencies in AngularWebpackStarter folder
 ```
 npm install
