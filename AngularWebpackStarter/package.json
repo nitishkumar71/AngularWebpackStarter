@@ -5,7 +5,7 @@
   "description": "Example project from an angular.io guide.",
   "scripts": {
     "start": "webpack-dev-server --inline --progress --port 8080",
-    "watch-webpack-dev": "set NODE_ENV=development && webpack --hot --watch --color",
+    "watch-webpack-dev": "set NODE_ENV=development && webpack --watch --color",
     "test": "karma start karma.webpack.conf.js",
     "prod:build": "rimraf dist && webpack --config config/webpack.prod.js --bail",
     "lint": "tslint ./src/**/*.ts -t verbose",
