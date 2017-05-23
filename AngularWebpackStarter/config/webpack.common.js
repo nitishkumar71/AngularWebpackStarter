@@ -99,7 +99,8 @@ module.exports = {
           },
       {
           "exclude": [
-              path.join(process.cwd(), "src\\styles.css")
+               path.join(process.cwd(), "src\\styles.css"),
+              path.join(process.cwd(),"node_modules")
           ],
           "test": /\.css$/,
           "use": [
@@ -122,7 +123,8 @@ module.exports = {
       },
       {
           "exclude": [
-              path.join(process.cwd(), "src\\styles.css")
+              path.join(process.cwd(), "src\\styles.css"),
+              path.join(process.cwd(),"node_modules")
           ],
           "test": /\.scss$|\.sass$/,
           "use": [
@@ -153,7 +155,8 @@ module.exports = {
       },
       {
           "exclude": [
-              path.join(process.cwd(), "src\\styles.css")
+              path.join(process.cwd(), "src\\styles.css"),
+              path.join(process.cwd(),"node_modules")
           ],
           "test": /\.less$/,
           "use": [
@@ -182,7 +185,8 @@ module.exports = {
       },
       {
           "exclude": [
-              path.join(process.cwd(), "src\\styles.css")
+              path.join(process.cwd(), "src\\styles.css"),
+              path.join(process.cwd(),"node_modules")
           ],
           "test": /\.styl$/,
           "use": [
@@ -212,7 +216,8 @@ module.exports = {
       },
       {
           "include": [
-              path.join(process.cwd(), "src\\styles.css")
+              path.join(process.cwd(), "src\\styles.css"),
+              path.join(process.cwd(),"node_modules")
           ],
           "test": /\.css$/,
           "use": [
@@ -235,7 +240,8 @@ module.exports = {
       },
       {
           "include": [
-              path.join(process.cwd(), "src\\styles.css")
+              path.join(process.cwd(), "src\\styles.css"),
+              path.join(process.cwd(),"node_modules")
           ],
           "test": /\.scss$|\.sass$/,
           "use": [
@@ -266,7 +272,8 @@ module.exports = {
       },
       {
           "include": [
-              path.join(process.cwd(), "src\\styles.css")
+              path.join(process.cwd(), "src\\styles.css"),
+              path.join(process.cwd(),"node_modules")
           ],
           "test": /\.less$/,
           "use": [
@@ -295,7 +302,8 @@ module.exports = {
       },
       {
           "include": [
-              path.join(process.cwd(), "src\\styles.css")
+              path.join(process.cwd(), "src\\styles.css"),
+              path.join(process.cwd(),"node_modules")
           ],
           "test": /\.styl$/,
           "use": [
@@ -369,4 +377,3 @@ module.exports = {
     })
   ]
 };
-
