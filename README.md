@@ -80,6 +80,8 @@ Below content is already included in web.config, advised to customize as per the
         <conditions logicalGrouping="MatchAll">
           <add input="{REQUEST_FILENAME}" matchType="IsFile" negate="true" />
           <add input="{REQUEST_FILENAME}" matchType="IsDirectory" negate="true" />
+          <add input="{REQUEST_URI}" pattern="^/(api)" negate="true" />
+          <!-- In IIS you may need to install a url-rewrite module -->
         </conditions>
         <action type="Rewrite" url="/" />
       </rule>
