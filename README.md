@@ -96,3 +96,16 @@ Below content is already included in web.config, advised to customize as per the
 2. application specific custom css and css files should be included in styles.css
 
 Example for both is included in project
+
+
+## Typings Setting (optional)
+1. create .typingsrc in your project folder
+2. include below configuration in .typingsrc file and change user name and password
+
+```
+proxy = http://INT%5CUserName:Password@proxyserver:port
+https-proxy = http://INT%5CUserName:Password@proxyserver:port
+rejectUnauthorized: false
+strict-ssl=false
+```
+registryURL: http://api.typings.org/
