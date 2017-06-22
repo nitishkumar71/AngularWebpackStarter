@@ -107,5 +107,6 @@ proxy = http://INT%5CUserName:Password@proxyserver:port
 https-proxy = http://INT%5CUserName:Password@proxyserver:port
 rejectUnauthorized: false
 strict-ssl=false
-```
 registryURL: http://api.typings.org/
+```
+
